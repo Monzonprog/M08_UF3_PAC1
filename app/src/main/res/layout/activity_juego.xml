@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_juego"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.jorge.m08_uf3_pac1.JuegoActivity"
+    android:background="@color/background_color"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/preguntaTV"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="3dp"
+                android:background="#000000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/radioGroupRespuestas">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:id="@+id/respuesta1RB" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:id="@+id/respuesta2RB" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:id="@+id/respuesta3RB" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:id="@+id/respuesta4RB" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="3dp"
+                android:background="#000000"/>
+
+            <Button
+                android:text="Validar Respuesta"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="presionarBoton"
+                android:id="@+id/validarButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

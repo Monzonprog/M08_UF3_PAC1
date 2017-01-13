@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">M08_UF3_PAC1</string>
+    <string name="aciertos_resultado">Has acertado: %1$d</string>
+    <string name="errores_resultado">Has fallado: %1$d</string>
+    <string name="solicitar_nombre">Introduce tu nombre</string>
+
+</resources>
